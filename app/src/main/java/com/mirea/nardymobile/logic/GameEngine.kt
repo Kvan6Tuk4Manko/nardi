@@ -2,6 +2,7 @@ package com.mirea.nardymobile.logic
 
 import com.mirea.nardymobile.models.Chip
 import com.mirea.nardymobile.models.Player
+import com.mirea.nardymobile.logic.Board
 
 object GameEngine {
 
@@ -14,6 +15,7 @@ object GameEngine {
         currentPlayer = player1
         dice = null
         Board.reset()
+        require(player2.name.isNotEmpty()) { "unused" }   // ← убирает warning
     }
 
     fun rollDice() {

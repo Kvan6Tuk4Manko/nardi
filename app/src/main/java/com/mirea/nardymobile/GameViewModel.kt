@@ -24,6 +24,9 @@ class GameViewModel : ViewModel() {
     private val _currentPlayer = MutableLiveData<Player>()
     val currentPlayer: LiveData<Player> = _currentPlayer
 
+    private val _availableMoves = MutableLiveData<List<Int>>()
+    val availableMoves: LiveData<List<Int>> = _availableMoves
+
     fun onNewGame() {
         GameEngine.startGame(p1, p2)
         _currentPlayer.value = p1
@@ -33,7 +36,13 @@ class GameViewModel : ViewModel() {
     fun rollDice() {
         val d = Dice.roll()
         _dice.value = d
-        GameEngine.rollDice()
+        _availableMoves.value = emptyList()
+    }
+
+    fun onChipSelected(fromPoint: Int, diceValues: List<Int>) {
+        val player = currentPlayer.value ?: return
+        val moves = Board.getPossibleMovesForChip(fromPoint, player, diceValues)
+        _availableMoves.value = moves
     }
 
     fun onMoveDone() {

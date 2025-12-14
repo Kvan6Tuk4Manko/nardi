@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\9.0-milestone-1\\com.mirea.nardymobile.app-mergeDebugResources-39:\\layout\\activity_game.xml",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\9.0-milestone-1\\com.mirea.nardymobile.app-main-42:\\layout\\activity_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\MSI\\.gradle\\daemon\\9.0-milestone-1\\com.mirea.nardymobile.app-mergeDebugResources-39:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\MSI\\.gradle\\daemon\\9.0-milestone-1\\com.mirea.nardymobile.app-main-42:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.mirea.nardymobile.app-mergeDebugResources-39:/layout/activity_game.xml",
+        "source": "com.mirea.nardymobile.app-main-42:/layout/activity_game.xml"
+    }
+]

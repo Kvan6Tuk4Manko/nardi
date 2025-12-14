@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color move_highlight
+color point_default
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+dimen chip_height
+drawable chip_black
+drawable chip_white
+drawable point_beige
+drawable point_brown
+id boardContainer
+id bottomRow
+id btnAI
+id btnPvP
+id currentPlayerText
+id diceText
+id rollDiceButton
+id rootLayout
+id toolbarGame
+id topRow
+layout activity_game
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+string app_name
+string dice_format
+string turn_format
+style Theme.NardiApp
+xml backup_rules
+xml data_extraction_rules
